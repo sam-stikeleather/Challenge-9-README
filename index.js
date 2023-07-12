@@ -51,8 +51,26 @@ inquirer
             message: 'What is your email address?',
             name: 'email',
         },
-
     ])
+    .then((response) => {
+        console.log(response);
+        console.log(response.title);
+        console.log(response.description);
+        console.log(response.installation);
+        console.log(response.usage);
+        console.log(response.contributions);
+        console.log(response.test);
+        console.log(response.license);
+        console.log(response.username);
+        console.log(response.email);
+
+        const fileData = 
+        `#title: ${response.title}
+        
+        ##: `
+    }
+    );
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
