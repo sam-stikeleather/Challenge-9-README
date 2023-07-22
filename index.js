@@ -1,9 +1,48 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-// TODO: Create an array of questions for user input
-const questions = [];
-inquirer
+
+// Function to generate the Markdown content based on user responses
+function generateMarkdown(response) {
+  return `# ${response.title}
+
+## Description
+${response.description}
+
+## Installation
+${response.installation}
+
+## Usage
+${response.usage}
+
+## Contributions
+${response.contributions}
+
+## Test
+${response.test}
+
+## License
+${response.license.join(', ')}
+
+## Contact
+GitHub: ${response.username}
+Email: ${response.email}
+`;
+}
+
+// Function to write the README file
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, function (err) {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(`Successfully generated ${fileName}!`);
+    }
+  });
+}
+
+// Function to initialize the application
+function init() {
+  inquirer
     .prompt([
         {
             type: 'input',
@@ -53,30 +92,17 @@ inquirer
         },
     ])
     .then((response) => {
-        console.log(response);
-        console.log(response.title);
-        console.log(response.description);
-        console.log(response.installation);
-        console.log(response.usage);
-        console.log(response.contributions);
-        console.log(response.test);
-        console.log(response.license);
-        console.log(response.username);
-        console.log(response.email);
+      const markdown = generateMarkdown(response);
+      const fileName = 'README.md'; // Changed the output file name to README.md
+      writeToFile(fileName, markdown);
+    })
+    .catch((error) => {
+      console.error('Error occurred:', error);
+    });
+}
 
-        const fileData = 
-        `#title: ${response.title}
-        
-        ##: `
-    }
-    );
-
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
+// Function call to initialize the app
 init();
+
+
+
