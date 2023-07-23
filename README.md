@@ -1,7 +1,7 @@
-# Sam is COOL AF
+# Readme Gen
 
 ## Description
-It's about how cool I am
+It makes readme.md files
 
 ## Table of Contents
 - [Installation](#installation)
@@ -11,13 +11,13 @@ It's about how cool I am
 - [Questions](#questions)
 
 ## Installation
-Install it in your ass
+Uses nodeJS and Inquirer and Express
 
 ## Usage
-Use it in your ass
+Go to your console once all dependencies are installed and use node index.js then answer the questions.
 
 ## Contributing
-Contribute it up your ass
+No
 
 ![License Badge](https://img.shields.io/badge/license-MIT-blue)
 
