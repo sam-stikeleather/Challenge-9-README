@@ -1,23 +1,31 @@
-# Module 10 Challenge
+# Sam is COOL AF
 
 ## Description
-This is a README.md generator	
+It's about how cool I am
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Questions](#questions)
 
 ## Installation
-Install inquirer 	and express
+Install it in your ass
 
 ## Usage
-It's pretty self explanantory
+Use it in your ass
 
-## Contributions
-No
+## Contributing
+Contribute it up your ass
 
-## Test
-No
+![License Badge](https://img.shields.io/badge/license-MIT-blue)
 
 ## License
-MIT
+This project is licensed under the MIT license. Please refer to [MIT License]() for more details.
 
-## Contact
-GitHub: sam.stikeleather
+## Questions
+For any questions, please contact me:
+
+GitHub: [sam.stikeleather](https://github.com/sam.stikeleather)  
 Email: sam.stikeleather@gmail.com
